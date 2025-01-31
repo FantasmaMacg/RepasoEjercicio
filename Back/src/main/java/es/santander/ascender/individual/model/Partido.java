@@ -32,19 +32,18 @@ public class Partido {
     }
 
     public Partido(long id, @Size(max = 30) String nombre, @Size(max = 150) String descripcion,
-             @Size(max = 30) String deporte, 
-             @Min(value = -1) @Max(value = 1) 
-             int resultado, @Min(value = 0) float apuesta) {    
-        // En la creación sin nombre de fichero, se pone a null
-        this.id = id;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-                
-        this.deporte = deporte;
-        this.resultado = resultado;
-        this.apuesta = apuesta;
+    @Size(max = 30) String deporte, 
+    @Min(value = -1) @Max(value = 1) int resultado, 
+    @Min(value = 0) float apuesta, String nombreFichero) {    
+    this.id = id;
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.deporte = deporte;
+    this.resultado = resultado;
+    this.apuesta = apuesta;
+    this.nombreFichero = nombreFichero; // Asignar el nombre del fichero
     }
-
+    
     public long getId() {
         return id;
     }

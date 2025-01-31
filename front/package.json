@@ -1,0 +1,18 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx parcel src/index.html",
+    "build": "npx parcel build ./src/javascript/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "parcel": "^2.13.2"
+  }
+  
+}
